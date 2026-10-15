@@ -1,0 +1,51 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #090e16;
+  --surface: rgba(18, 31, 48, 0.72);
+  --surface-border: rgba(99, 146, 198, 0.26);
+  --text: #e7edf6;
+  --muted: #a8bfd9;
+  --accent-blue: #53a6ff;
+  --accent-orange: #ff9d4d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(circle at 8% 5%, rgba(83, 166, 255, 0.2), transparent 36%),
+    radial-gradient(circle at 92% 15%, rgba(255, 157, 77, 0.18), transparent 32%),
+    linear-gradient(180deg, #070a10, #0d1320 55%, #070a10);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+a {
+  color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
